@@ -118,7 +118,7 @@ def kmeans(
         if iter_limit != 0 and iteration >= iter_limit:
             break
 
-    return choice_cluster.cpu(), initial_state.cpu()
+    return choice_cluster.cpu(), initial_state.cpu(), iteration
 
 
 def kmeans_predict(
